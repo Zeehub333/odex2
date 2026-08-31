@@ -1,0 +1,2 @@
+"active";"name";"job";"cron";"batchServiceSelect";"batchCode"
+"true";"MAJ quotidienne à 1h des comptes client ";"com.odex.apps.base.job.BatchJob";"0 0 1 ? * * *";"com.odex.apps.account.service.batch.AccountingBatchService";"AX_UPDATE"

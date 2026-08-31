@@ -1,0 +1,18 @@
+plugins {
+	id 'com.axelor.app'
+}
+
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Odex Supplier Management"
+	description "Odex Supplier Management Module"
+}
+
+dependencies {
+	api project(":modules:odex-supplychain")
+}

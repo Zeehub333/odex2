@@ -1,0 +1,22 @@
+plugins {
+	id 'com.axelor.app'
+}
+
+apply from: "../libs.gradle"
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Odex Quality"
+	description "Odex Quality Module"
+}
+
+dependencies {
+	api project(":modules:odex-human-resource")
+	api project(":modules:odex-supplychain")
+
+	implementation libs.swagger_jaxrs
+}

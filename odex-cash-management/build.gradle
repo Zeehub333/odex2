@@ -1,0 +1,19 @@
+plugins {
+	id 'com.axelor.app'
+}
+
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Odex Cash Management"
+	description "Odex Cash Management Module"
+}
+
+dependencies {
+	api project(":modules:odex-human-resource")
+	api project(":modules:odex-supplychain")
+}

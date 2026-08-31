@@ -1,0 +1,20 @@
+plugins {
+	id 'com.axelor.app'
+}
+
+apply from: "../libs.gradle"
+apply from: "../version.gradle"
+
+apply {
+	version = openSuiteVersion
+}
+
+axelor {
+	title "Odex Maintenance"
+	description "Computerized Maintenance Management System"
+}
+
+dependencies {
+	api project(":modules:odex-production")
+	implementation libs.swagger_jaxrs
+}
